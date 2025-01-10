@@ -1,0 +1,50 @@
+Checkpoint Evaluation Results
+===========================
+
+Best Checkpoints:
+
+Best I2T_R@1:
+Checkpoint: epoch=6-step=5663-train_loss=4.6638.ckpt
+Score: 42.52%
+
+Detailed metrics for this checkpoint:
+I2T_R@1: 42.52
+T2I_R@1: 42.02
+I2T_R@5: 65.86
+T2I_R@5: 66.71
+I2T_R@10: 74.73
+T2I_R@10: 75.88
+I2T_median_rank: 2.00
+T2I_median_rank: 2.00
+
+
+Best T2I_R@1:
+Checkpoint: epoch=8-step=7281-train_loss=4.6546.ckpt
+Score: 42.38%
+
+Detailed metrics for this checkpoint:
+I2T_R@1: 42.30
+T2I_R@1: 42.38
+I2T_R@5: 66.57
+T2I_R@5: 67.07
+I2T_R@10: 75.09
+T2I_R@10: 76.66
+I2T_median_rank: 2.00
+T2I_median_rank: 2.00
+
+
+Complete Results for All Checkpoints:
+===================================
+
+                                            I2T_R@1    T2I_R@1    I2T_R@5    T2I_R@5   I2T_R@10   T2I_R@10  I2T_median_rank  T2I_median_rank
+checkpoint                                                                                                                                  
+epoch=0-step=809-train_loss=5.0153.ckpt   36.864710  37.652112  58.482462  60.415175  68.002863  70.221904              3.0              3.0
+epoch=1-step=1618-train_loss=4.8910.ckpt  39.513243  38.869005  61.560487  62.992126  71.581961  71.796707              3.0              3.0
+epoch=2-step=2427-train_loss=4.8103.ckpt  40.873300  39.942734  63.636364  63.564782  73.013601  73.801002              2.0              2.0
+epoch=3-step=3236-train_loss=4.7411.ckpt  41.517538  40.944882  64.924839  64.495347  73.586256  75.089477              2.0              2.0
+epoch=4-step=4045-train_loss=4.7241.ckpt  41.875447  41.517538  65.211167  65.998568  74.373658  75.089477              2.0              2.0
+epoch=5-step=4854-train_loss=4.6950.ckpt  42.304939  42.304939  65.640659  66.714388  74.445240  75.447387              2.0              2.0
+epoch=6-step=5663-train_loss=4.6638.ckpt  42.519685  42.018611  65.855404  66.714388  74.731568  75.876879              2.0              2.0
+epoch=7-step=6472-train_loss=4.6537.ckpt  42.304939  41.875447  66.284896  67.215462  74.874732  76.091625              2.0              2.0
+epoch=8-step=7281-train_loss=4.6546.ckpt  42.304939  42.376521  66.571224  67.072298  75.089477  76.664281              2.0              2.0
+last.ckpt                                 42.304939  42.376521  66.571224  67.072298  75.089477  76.664281              2.0              2.0

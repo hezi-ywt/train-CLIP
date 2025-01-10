@@ -1,0 +1,13 @@
+Query Text: original, takenoko (531), cityscape, green theme, overgrown, no humans, leaf, pillar, scenery, crow, flower, bird, crack, sketch, vines, tree, plant, safe, worst quality
+
+Top 5 Retrieved Images:
+
+1. 7752642.webp
+
+2. 7564521.webp
+
+3. 8028097.webp
+
+4. 8266658.webp
+
+5. 8170521.webp

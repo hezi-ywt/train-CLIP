@@ -1,0 +1,13 @@
+Query Text: original, jsf23art, town, music, flower, sky, horse, building, day, sitting, red flower, cross, playing guitar, outdoors, pixel art, street, road, blue sky, mountain, cloud, playing instrument, guitar, church, instrument, tree, european architecture, on ground, scenery, highres, safe
+
+Top 5 Retrieved Images:
+
+1. 8142812.webp
+
+2. 8033044.webp
+
+3. 8299552.webp
+
+4. 8338876.webp
+
+5. 7536764.webp

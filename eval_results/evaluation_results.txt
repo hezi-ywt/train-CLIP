@@ -1,0 +1,44 @@
+Checkpoint Evaluation Results
+===========================
+
+Best Checkpoints:
+
+Best I2T_R@1:
+Checkpoint: epoch=6-step=26000-train_loss=2.7417.ckpt
+Score: 68.86%
+
+Detailed metrics for this checkpoint:
+I2T_R@1: 68.86
+T2I_R@1: 69.79
+I2T_R@5: 87.19
+T2I_R@5: 87.83
+I2T_R@10: 92.13
+T2I_R@10: 92.91
+I2T_median_rank: 1.00
+T2I_median_rank: 1.00
+
+
+Best T2I_R@1:
+Checkpoint: epoch=5-step=23500-train_loss=2.7556.ckpt
+Score: 69.79%
+
+Detailed metrics for this checkpoint:
+I2T_R@1: 68.72
+T2I_R@1: 69.79
+I2T_R@5: 87.47
+T2I_R@5: 88.05
+I2T_R@10: 92.13
+T2I_R@10: 92.70
+I2T_median_rank: 1.00
+T2I_median_rank: 1.00
+
+
+Complete Results for All Checkpoints:
+===================================
+
+                                             I2T_R@1    T2I_R@1    I2T_R@5    T2I_R@5   I2T_R@10   T2I_R@10  I2T_median_rank  T2I_median_rank
+checkpoint                                                                                                                                   
+epoch=5-step=22000-train_loss=2.7676.ckpt  68.790265  69.720830  87.544739  88.188976  92.125984  92.770222              1.0              1.0
+epoch=5-step=23500-train_loss=2.7556.ckpt  68.718683  69.792412  87.473157  88.045812  92.125984  92.698640              1.0              1.0
+epoch=6-step=26000-train_loss=2.7417.ckpt  68.861847  69.792412  87.186829  87.831067  92.125984  92.913386              1.0              1.0
+last.ckpt                                  68.503937  68.575519  87.258411  87.544739  91.553329  92.627058              1.0              1.0

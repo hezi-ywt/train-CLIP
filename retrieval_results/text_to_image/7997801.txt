@@ -1,0 +1,13 @@
+Query Text: original, hariken, day, grass, nature, outdoors, no humans, path, blue sky, sky, scenery, forest, fence, tree, highres, safe
+
+Top 5 Retrieved Images:
+
+1. 7997801.webp
+
+2. 8245838.webp
+
+3. 7989330.webp
+
+4. 7469495.webp
+
+5. 8170521.webp

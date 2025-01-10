@@ -1,0 +1,13 @@
+Query Text: original, xuedaixun, fast food, artist logo, simple background, basket, food, white background, french fries, no humans, food focus, safe, normal quality
+
+Top 5 Retrieved Images:
+
+1. 7556158.webp
+
+2. 7968649.webp
+
+3. 8301416.webp
+
+4. 7855137.webp
+
+5. 7395194.webp

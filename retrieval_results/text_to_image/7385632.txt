@@ -1,0 +1,13 @@
+Query Text: original, yonasawa, arch, no humans, building, cityscape, floating, starry sky, spacecraft, architecture, water, star (sky), sky, scenery, glint, waterfall, night, outdoors, spire, castle, highres, absurdres, safe, normal quality
+
+Top 5 Retrieved Images:
+
+1. 7385632.webp
+
+2. 7853802.webp
+
+3. 8288188.webp
+
+4. 8289013.webp
+
+5. 7626891.webp

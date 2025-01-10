@@ -9,7 +9,6 @@ import copy
 from cosine_annealing_warmup import CosineAnnealingWarmupRestarts
 from .model import CLIP
 
-
 class CLIPWrapper(pl.LightningModule):
     def __init__(self,
                  model_name: str,
@@ -139,18 +138,30 @@ class CLIPWrapper(pl.LightningModule):
             weight_decay=0.2
         )
 
-        # Source: https://github.com/openai/CLIP/issues/107
-        # Use pip install 'git+https://github.com/katsura-jp/pytorch-cosine-annealing-with-warmup'
+        # 计算总训练步数
+        total_steps = self.num_training_steps
+        
+        # 确保warmup_steps小于first_cycle_steps
+        first_cycle_steps = max(total_steps, 10000)  # 确保first_cycle_steps至少为10000
+        warmup_steps = min(2000, first_cycle_steps // 10)  # 使用周期步数的10%作为预热步数，但不超过2000
+        
         lr_scheduler = CosineAnnealingWarmupRestarts(
             optimizer,
-            first_cycle_steps=self.num_training_steps,
+            first_cycle_steps=first_cycle_steps,
             cycle_mult=1.0,
             max_lr=lr,
-            min_lr=0,
-            warmup_steps=2000
+            min_lr=1e-6,
+            warmup_steps=warmup_steps,
+            gamma=0.5
         )
 
-        return {'optimizer': optimizer, 'lr_scheduler': lr_scheduler}
+        return {
+            "optimizer": optimizer,
+            "lr_scheduler": {
+                "scheduler": lr_scheduler,
+                "interval": "step",
+            },
+        }
 
 
 class CustomCLIPWrapper(CLIPWrapper):
@@ -320,25 +331,3 @@ class CustomCLIPWrapper(CLIPWrapper):
 
         Q *= B  # the colomns must sum to 1 so that Q is an assignment
         return Q.t()
-
-    def configure_optimizers(self):
-        lr = self.learning_rate
-
-        optimizer = torch.optim.SGD(
-            self.parameters(),
-            lr=lr,
-            momentum=0.9
-        )
-
-        # Source: https://github.com/openai/CLIP/issues/107
-        # Use pip install 'git+https://github.com/katsura-jp/pytorch-cosine-annealing-with-warmup'
-        lr_scheduler = CosineAnnealingWarmupRestarts(
-            optimizer,
-            first_cycle_steps=self.num_training_steps,
-            cycle_mult=1.0,
-            max_lr=lr,
-            min_lr=0,
-            warmup_steps=2000
-        )
-
-        return {'optimizer': optimizer, 'lr_scheduler': lr_scheduler}
